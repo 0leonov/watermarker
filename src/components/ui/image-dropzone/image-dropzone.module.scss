@@ -1,0 +1,26 @@
+.dropzone {
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  border-radius: var(--radius);
+  border: 1px dashed var(--border);
+
+  user-select: none;
+
+  transition: all 0.24s ease-in-out;
+
+  &.active {
+    border-style: solid;
+  }
+
+  .extensions {
+    color: var(--muted-foreground);
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}

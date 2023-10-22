@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:react/recommended",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["import", "@typescript-eslint", "prettier"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  }
+}

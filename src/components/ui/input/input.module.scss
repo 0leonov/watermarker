@@ -1,0 +1,23 @@
+.input {
+  width: 100%;
+
+  padding: 0.5rem 0.75rem;
+
+  color: var(--foreground);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  background: var(--background);
+
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  display: block;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+}
