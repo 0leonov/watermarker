@@ -9,16 +9,14 @@ export interface ImageDropzoneProps {
   className?: string;
 }
 
-export const ImageDropzone = React.forwardRef<
-  HTMLInputElement,
-  ImageDropzoneProps
->(({ className, onDrop }, ref) => {
+export function ImageDropzone({ className, onDrop }: ImageDropzoneProps) {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: {
-      "image/jpeg": [],
-      "image/png": [],
-    },
+    // While building happening TypeError | In dev mode it works
+    // accept: {
+    //   "image/png": [".png"],
+    //   "image/jpeg": [".jpg", ".jpeg"],
+    // },
   });
 
   return (
@@ -29,7 +27,7 @@ export const ImageDropzone = React.forwardRef<
         } ${className}`,
       })}
     >
-      <input {...getInputProps()} ref={ref} />
+      <input {...getInputProps()} />
 
       <FileUp />
 
@@ -40,5 +38,4 @@ export const ImageDropzone = React.forwardRef<
       <span className={styles.extensions}>.jpeg, .jpg, .png</span>
     </div>
   );
-});
-ImageDropzone.displayName = "ImageDropzone";
+}
