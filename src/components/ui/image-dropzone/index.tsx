@@ -12,11 +12,10 @@ export interface ImageDropzoneProps {
 export function ImageDropzone({ className, onDrop }: ImageDropzoneProps) {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    // While building happening TypeError | In dev mode it works
-    // accept: {
-    //   "image/png": [".png"],
-    //   "image/jpeg": [".jpg", ".jpeg"],
-    // },
+    accept: {
+      "image/png": [".png"],
+      "image/jpeg": [".jpg", ".jpeg"],
+    },
   });
 
   return (
