@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
 
-import "./globals.css";
+import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Watermarker",
   description: "Generate your own watermarks",
+  icons: "/logo.svg",
 };
 
 export default function RootLayout({

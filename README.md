@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![](/public/images/logo.svg)
 
-## Getting Started
+# Watermarker
 
-First, run the development server:
+---
+
+## Overview
+
+This website allows you to add text to images, customize the text content, font transparency, size, color, and position relative to the top-left corner of the image.
+It supports image formats like .png, .jpg, and .jpeg.
+Before uploading images, you can preview the selected images and remove any by clicking on them.
+
+## Features
+
+**Image Upload:**
+You can upload images in .png, .jpg, and .jpeg formats.
+
+**Text Customization:**
+You can add text to the images, change the text content, adjust font transparency, font size, and font color.
+
+**Text Positioning:**
+Set the position of the text relative to the top-left corner of the image.
+
+**Image Preview:**
+Before upload, you can preview the images you added.
+
+**Image Deletion:**
+You can remove any selected image.
+
+## Usage
+
+**Upload Image:**
+To upload images, you can use drag and drop or select the file manually
+
+**Add Watermark to Images:**
+Type the desired text in the provided text input.
+
+**Text Customization:**
+Adjust the font transparency, size, and color using the available options.
+
+**Position Text:**
+Set the text position by specifying the offset from the top-left corner of the image.
+(Recommended that the vertical offset be larger than the font size)
+
+**Delete Image:**
+To remove an image, click on the image in the preview section.
+
+**Download Image:**
+Click to upload button and archive with your watermarked images will be downloaded.
+
+## To run this website locally, follow these steps:
+
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/0leonov/watermarker.get
+cd watermarker
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Build:
 
-## Learn More
+```bash
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Access the website in your web browser at http://localhost:3000.
 
-## Deploy on Vercel
+## Credits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is created and maintained by [Artyom Leonov](https://github.com/0leonov/). Feel free to contribute and improve the website by submitting pull requests or reporting issues on the GitHub repository.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is open-source and available under the MIT License.
+
+---
+
+Enjoy adding text to your images and customizing them with ease!

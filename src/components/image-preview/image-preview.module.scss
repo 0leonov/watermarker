@@ -1,0 +1,17 @@
+@import "src/styles/variables";
+
+.images {
+  margin-top: 1rem;
+
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+
+  @media (min-width: $layout-breakpoint-phone) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: $layout-breakpoint-tablet) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

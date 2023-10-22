@@ -10,14 +10,22 @@
     "format": "yarn prettier . --write"
   },
   "dependencies": {
+    "canvas": "^2.11.2",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.288.0",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-colorful": "^5.6.1",
+    "react-dom": "^18",
+    "react-dropzone": "^14.2.3",
+    "sharp": "^0.32.6",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.6",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.51.0",
@@ -30,6 +38,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.3",
+    "sass": "^1.69.4",
     "typescript": "^5"
   }
 }

@@ -1,0 +1,11 @@
+.errorAlert {
+  padding: 1rem;
+
+  color: var(--destructive-foreground);
+
+  font-weight: 500;
+
+  border-radius: var(--radius);
+
+  background: var(--destructive);
+}

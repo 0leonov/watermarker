@@ -1,0 +1,46 @@
+@import "src/styles/variables";
+
+.form {
+  .dropzone {
+    margin: 1rem auto 0;
+    height: 200px;
+  }
+
+  .uploadButton {
+    margin-top: 1rem;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .imagePreview {
+    margin-top: 2rem;
+  }
+
+  .colorPicker {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  section {
+    margin-top: 1rem;
+
+    display: grid;
+    gap: 1rem;
+
+    @media (min-width: $layout-breakpoint-tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .offsets {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem;
+    }
+  }
+}

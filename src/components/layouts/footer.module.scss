@@ -1,0 +1,21 @@
+.footer {
+  padding: 1rem;
+
+  background: var(--muted);
+  color: var(--muted-foreground);
+
+  font-size: 0.75rem;
+  line-height: 1rem;
+
+  border-top: 1px solid var(--border);
+
+  a {
+    font-weight: 500;
+
+    text-underline-offset: 4px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

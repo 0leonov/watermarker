@@ -1,0 +1,39 @@
+.page {
+  min-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+
+  main {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 4rem 1rem 1rem;
+
+    flex-grow: 1;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .form {
+    margin-top: 2rem;
+  }
+
+  .instruction {
+    margin-top: 1rem;
+    padding: 1rem;
+
+    background: var(--muted);
+    color: var(--muted-foreground);
+
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+
+    p:not(:first-child) {
+      margin-top: 0.2rem;
+    }
+  }
+}
