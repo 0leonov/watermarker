@@ -1,8 +1,4 @@
-![](/public/images/logo.svg)
-
 # Watermarker
-
----
 
 ## Overview
 
